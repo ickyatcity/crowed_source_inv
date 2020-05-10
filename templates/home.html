@@ -1,1 +1,30 @@
-Hello 
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{ block.super }} | Welcome{% endblock title %}
+
+{% block script %}
+
+<script src="{% static 'js/custom.js' %}"></script>
+
+{% endblock script %}
+
+
+{% block content %}
+
+<div class="container">
+
+  <h1 class="my-4 font-weight-bold"> Politicians <small
+      class="text-muted h6 font-italic text-capitalize blockqoute-footer"> Featured profiles this week </small></h1>
+
+  <!-- Marketing Icons Section -->
+  <!-- Page Features -->
+  <div class="row text-center">
+    {% include "cards_small.html" %}
+    {% include "cards_small.html" %}
+    {% include "cards_small.html" %}
+    {% include "cards_small.html" %}
+  </div>
+</div>
+
+
+{% endblock content %}
