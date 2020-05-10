@@ -25,7 +25,7 @@ SECRET_KEY = '$o=s7fe7+p6=w0cnjo$$!=$^-han2t_ychhc31sspd%u(%la1m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -66,6 +66,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'crowd_pi.wsgi.application'
 
